@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 6rem;
+  padding: 0 1rem;
+  background-color: #181a24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 2.3rem;
+  color: #e3c031;
+  margin: 1rem;
+}
+
+.container__nav {
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.container__nav__list {
+  margin: 1.3rem;
+  display: inline;
+  padding: 0.5rem;
+}
+
+.container__nav__list__a {
+  font-weight: bold;
+}
+
+.container__nav__list__a:visited {
+  color: #fff;
+}
+
+.container__nav__list__a:hover {
+  color: #f6d365;
+}
+
+.check {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.check:visited {
+  color: #000;
+}
+
+/*Secciones*/
+
+.main {
+  width: 95%;
+  height: 80%;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.section {
+  background-color: #fdfdfd;
+  font-size: 0.7rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section__title {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: #fcd949;
+  color: #000;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+.myTeams,
+.otherTeams {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+}
+
+.myTeams__list,
+.otherTeams__list {
+  background-color: #fff;
+  font-size: 1rem;
+  width: 17rem;
+  margin: 1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  list-style: none;
+}
+
+.myTeams__list:hover,
+.otherTeams__list:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.myTeams__list__game,
+.otherTeams__list__game {
+  margin: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myTeams__list__game span,
+.otherTeams__list__game span {
+  margin-left: 5rem;
+  font-weight: bold;
+}
+
+.section__news {
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.news__card {
+  display: flex;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+}
+
+.news__card {
+  cursor: pointer;
+}
+
+.news__image {
+  width: 300px;
+  height: 100%;
+}
+
+.card__text {
+  margin: 1rem 0 0 1rem;
+}
+
+/*Edicion de contacto.html*/
+
+.contact {
+  width: 20rem;
+  margin: 2rem auto;
+}
+
+.contact__form {
+  font-size: 0.8rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form__label {
+  margin-top: 1rem;
+}
+
+.contact__form__input {
+  margin-top: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+}
+
+.text-area {
+  resize: none;
+}
+
+.button {
+  font-weight: bold;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  background-color: #ffd738;
+  border: none;
+  color: #181a24;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* Seccion Favoritos */
+
+.container__fav {
+  margin: 1rem;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section__fav {
+  margin: 1rem;
+  width: 70%;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section__fav__logo {
+  grid-column: 1 / 4;
+  display: flex;
+}
+
+.title__logo {
+  margin: 0.7rem 0 0 1rem;
+}
+
+.logo__fav {
+  padding: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.logo__fav__img {
+  width: 2rem;
+}
+
+.fav__card {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fav__card:hover {
+  cursor: pointer;
+}
+
+.fav__card__img {
+  width: 100%;
+}
+
+.fav__card__text {
+  margin: 0 1rem;
+  font-size: 0.8rem;
+}
+
+/* Seccion partidos */
+
+.container__games {
+  margin-left: 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Seccion equipos */
+
+.container__leagues {
+  height: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.league {
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.league__name {
+  background-color: #fcd949;
+  border-radius: 2px;
+  width: 90%;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.league__name p {
+  margin-left: 1rem;
+}
+
+.league__team {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.league__team p {
+  margin: 0 1rem;
+}
+
+.logo__league {
+  border-radius: 50%;
+  width: 1.5rem;
+}

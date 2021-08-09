@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeFutbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__title">DeFutbol</a>
+      <nav class="container">
+        <ul class="container__nav">
+          <li class="container__nav__list">
+            <a class="container__nav__list__a" href="index.html">Inicio</a>
+          </li>
+          <li class="container__nav__list">
+            <a class="container__nav__list__a" href="favoritos.html"
+              >Favoritos</a
+            >
+          </li>
+          <li class="container__nav__list">
+            <a class="container__nav__list__a" href="partidos.html">Partidos</a>
+          </li>
+          <li class="container__nav__list">
+            <a class="container__nav__list__a" href="equipos.html">Equipos</a>
+          </li>
+          <li class="container__nav__list">
+            <a class="container__nav__list__a" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact">
+      <form action="#" class="contact__form">
+        <label for="name" class="contact__form__label">Nombre</label>
+        <input type="text" id="name" class="contact__form__input" />
+        <label for="surname" class="contact__form__label">Apellido</label>
+        <input type="text" id="surname" class="contact__form__input" />
+        <label for="email" class="contact__form__label">Email</label>
+        <input type="email" id="email" class="contact__form__input" />
+        <select name="gender" class="contact__form__label">
+          <option value="man">Masculino</option>
+          <option value="man">Femenino</option>
+        </select>
+        <label for="newsletter" class="contact__form__label"
+          >Desea recibir el Newsletter?</label
+        >
+        <input type="checkbox" id="newsletter" />
+        <textarea
+          placeholder="Deja un comentario"
+          class="contact__form__input text-area"
+        ></textarea>
+        <button type="reset" class="button">Reset</button>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
