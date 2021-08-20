@@ -35,39 +35,56 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__title animate__animated animate__bounce"
-        >DeFutbol</a
+      <nav
+        class="
+          navbar navbar-expand-lg
+          align-items-sm-center
+          nav-bar
+          navbar-dark
+        "
       >
-      <nav class="container">
-        <ul class="container__nav">
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="#">Inicio</a>
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="favoritos.html"
-              >Favoritos</a
-            >
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="partidos.html">Partidos</a>
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="equipos.html">Equipos</a>
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="contacto.html">Contacto</a>
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a" href="#">Iniciar Sesion</a>
-          </li>
-          <li class="container__nav__list">
-            <a class="container__nav__list__a check" href="#">Registrarse</a>
-          </li>
-        </ul>
+        <div class="container-fluid mx-lg-5">
+          <a class="navbar-brand brand" href="#">DeFutbol</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-lg-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-sm-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link active link-color" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-color" href="favoritos.html"
+                  >Favoritos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-color" href="partidos.html">Partidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-color" href="equipos.html">Equipos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-color" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="main">
-      <section class="section section__one">
+      <section class="section section__one se">
         <a href="/favoritos.html" class="section__title">Mis Equipos</a
         ><!--Click en Mis equipos redirige a Favoritos-->
         <div class="container__teams">
@@ -88,15 +105,11 @@
               <div class="myTeams__list__game">Equipo<span>5</span></div>
               <div class="myTeams__list__game">Equipo<span>2</span></div>
             </li>
-            <li class="myTeams__list">
-              <div class="myTeams__list__game">Equipo<span>2</span></div>
-              <div class="myTeams__list__game">Equipo<span>2</span></div>
-            </li>
           </ul>
         </div>
       </section>
       <section class="section section__two">
-        <h2 class="section__title">En vivo</h2>
+        <a href="#" class="section__title">En vivo</a>
         <div class="container__teams">
           <ul class="otherTeams">
             <li class="otherTeams__list">
@@ -111,7 +124,7 @@
         </div>
       </section>
       <section class="section section__news">
-        <h3 class="section__title">Noticias</h3>
+        <a href="#" class="section__title">Noticias</a>
         <div class="news">
           <div class="news__card">
             <div>
@@ -138,7 +151,7 @@
             </div>
           </div>
           <div class="news__card">
-            <div>
+            <div class="card__image">
               <img src="/Img/Boca.jpg" alt="boca" class="news__image" />
             </div>
             <div class="card__text">
