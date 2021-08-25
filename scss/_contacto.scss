@@ -1,0 +1,44 @@
+.contact {
+  width: 20rem;
+  margin: 2rem auto;
+
+  &__form {
+    font-size: 0.8rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+      margin-top: 1rem;
+    }
+
+    &__input {
+      margin-top: 0.2rem;
+      border: 1px solid #ccc;
+      border-radius: 0.3rem;
+      padding: 0.4rem;
+    }
+
+    .text-area {
+      resize: none;
+    }
+
+    .button {
+      font-weight: bold;
+      padding: 0.6rem;
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+      background-color: #211535;
+      border: none;
+      color: #fdfdfd;
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+$x-large: 1500px;
+$large: 992px;
+$medium: 700px;
+$small: 355px;
+
+@media screen and (min-width: $x-large) {
+  .main {
+    margin: 0 10rem;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: $large) {
+  .main {
+    margin: 0 10rem;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .myTeams,
+  .otherTeams {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: $small) {
+  .myTeams__list,
+  .otherTeams__list {
+    background-color: #fff;
+    font-size: 1rem;
+    width: 17rem;
+    margin: 1rem;
+    padding: 0.3rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    list-style: none;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: $large) {
+  .section {
+    width: 100%;
+    height: 90%;
+    background-color: #fdfdfd;
+    font-size: 0.7rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (min-width: $large) {
+  .section__fav {
+    margin: 1rem;
+    width: 70%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fav__card {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 0.1rem;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+}
