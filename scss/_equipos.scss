@@ -1,0 +1,75 @@
+.container__leagues {
+  height: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: $x-large) {
+    height: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .league {
+    margin: 1rem 0;
+    height: 30rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: $x-large) {
+      height: 30rem;
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__name {
+      background-color: #fcd949;
+      border-radius: 2px;
+      width: 100%;
+      font-weight: bold;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+
+      .logo__league {
+        border-radius: 50%;
+        width: 1.5rem;
+      }
+      & p {
+        margin-left: 1rem;
+      }
+    }
+
+    &__team {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem 0;
+
+      & p {
+        margin: 0 1rem;
+      }
+
+      .img__container {
+        .logo__fav__img {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}
