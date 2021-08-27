@@ -259,7 +259,7 @@ h3 {
         .container__fav .section__fav__logo .logo__fav__img {
           width: 1.5rem; }
       .container__fav .section__fav__logo .title__logo {
-        margin: 0.7rem 0 0 1rem; }
+        margin: 0 1rem; }
     .container__fav .section__fav .fav__card {
       margin: 1rem 0;
       height: auto;
