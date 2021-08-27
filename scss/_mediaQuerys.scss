@@ -3,8 +3,8 @@ $large: 992px;
 $medium: 700px;
 $small: 355px;
 
-@media screen and (min-width: $x-large) {
-  .main {
+.main {
+  @media screen and (min-width: $x-large) {
     margin: 0 10rem;
     height: 90vh;
     display: grid;
@@ -12,10 +12,8 @@ $small: 355px;
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-}
 
-@media screen and (min-width: $large) {
-  .main {
+  @media screen and (min-width: $large) {
     margin: 0 10rem;
     height: 100%;
   }

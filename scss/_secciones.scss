@@ -1,120 +1,128 @@
+$x-large: 1500px;
+$large: 992px;
+$medium: 700px;
+$small: 355px;
+
 .main {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
+}
 
-  .section {
-    width: 100%;
-    height: 90%;
-    background-color: #fdfdfd;
-    font-size: 0.7rem;
-    padding: 1rem;
-    margin: 1rem 0;
+.section {
+  width: 100%;
+  height: 90%;
+  background-color: #fdfdfd;
+  font-size: 0.7rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+
+  .section__title {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #211535;
+    color: #fff;
     border-radius: 0.3rem;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #211535;
+    padding: 0.5rem;
+    margin: 0;
+    font-weight: bold;
+    transition: all 0.5s;
 
-    .section__title {
-      font-size: 1rem;
-      display: inline-block;
-      background-color: #211535;
-      color: #fff;
-      border-radius: 0.3rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: #211535;
       border: 1px solid #211535;
-      padding: 0.5rem;
-      margin: 0;
-      font-weight: bold;
-      transition: all 0.5s;
+    }
+  }
+
+  .myTeams,
+  .otherTeams {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+
+    .myTeams__list,
+    .otherTeams__list {
+      background-color: #fff;
+      font-size: 1rem;
+      margin: 1rem;
+      padding: 0.3rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 0.2rem;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+      list-style: none;
+      justify-self: center;
 
       &:hover {
-        background-color: #fff;
-        color: #211535;
-        border: 1px solid #211535;
+        cursor: pointer;
+        transform: scale(1.1);
       }
-    }
 
-    .myTeams,
-    .otherTeams {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: grid;
+      &__game {
+        margin: 0.9rem;
+        display: flex;
+        justify-content: space-between;
 
-      .myTeams__list,
-      .otherTeams__list {
-        background-color: #fff;
-        font-size: 1rem;
-        margin: 1rem;
-        padding: 0.3rem 1rem;
-        border: 1px solid #ddd;
-        border-radius: 0.2rem;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-        transition: 0.5s;
-        list-style: none;
-        justify-self: center;
-
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.1);
-        }
-
-        &__game {
-          margin: 0.9rem;
-          display: flex;
-          justify-content: space-between;
-
-          & span {
-            margin-left: 5rem;
-            font-weight: bold;
-          }
+        & span {
+          margin-left: 5rem;
+          font-weight: bold;
         }
       }
     }
   }
+}
 
-  .section__two {
-    height: 20rem;
-  }
+.section__two {
+  height: 20rem;
+}
 
-  .section__news {
+.section__news {
+  @media screen and (min-width: $x-large) {
     grid-row: 1 / 3;
     grid-column: 2;
     height: auto;
     overflow-y: scroll;
+  }
 
-    .news {
+  .news {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+
+    &__card {
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 0.2rem;
       display: flex;
       flex-direction: column;
-      padding: 0.3rem;
 
-      &__card {
+      @media screen and (min-width: $large) {
         overflow: hidden;
+        flex-direction: row;
         margin-bottom: 1rem;
         border: 1px solid #ddd;
         border-radius: 0.2rem;
-        display: flex;
-        flex-direction: column;
+      }
 
-        @media screen and (min-width: $large) {
-          overflow: hidden;
-          flex-direction: row;
-          margin-bottom: 1rem;
-          border: 1px solid #ddd;
-          border-radius: 0.2rem;
-        }
+      &:hover {
+        cursor: pointer;
+      }
 
-        &:hover {
-          cursor: pointer;
-        }
+      .news__image {
+        width: 100%;
+        height: 100%;
+      }
 
-        .news__image {
-          width: 100%;
-          height: 100%;
-        }
-
-        .card__text {
-          text-align: start;
-          margin: 1rem;
-        }
+      .card__text {
+        text-align: start;
+        margin: 1rem;
       }
     }
   }
