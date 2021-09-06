@@ -1,9 +1,35 @@
 .nav-bar {
-  background-color: #211535;
+  background-color: #fff;
   font-size: 1rem;
-}
+  border-bottom: 1px solid #eee;
 
-.brand {
-  font-size: 2rem;
-  font-weight: bold;
+  .brand {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Allison", cursive;
+    color: $principalColor !important;
+  }
+
+  .link-color {
+    font-size: 0.8rem;
+    color: rgb(29, 27, 27);
+    text-transform: uppercase;
+    &:hover {
+      color: $principalColor;
+    }
+  }
+
+  .home {
+    background-color: $principalColor;
+    color: #fffffe;
+    border-radius: 0.3rem;
+    padding: 3px;
+    transition: 0.6s;
+
+    &:hover {
+      border: 1px solid $principalColor;
+      background-color: #fff;
+      color: $principalColor;
+    }
+  }
 }
