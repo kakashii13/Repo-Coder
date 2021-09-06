@@ -1,0 +1,61 @@
+.footer__container {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+
+  .footer__one {
+    margin: 2rem 4rem;
+
+    .footer__brand {
+      font-size: 2.4rem;
+      font-family: "Allison", cursive;
+      color: $principalColor;
+    }
+
+    .footer__text {
+      font-size: 1rem;
+
+      span {
+        font-weight: bold;
+        color: $principalColor;
+      }
+    }
+  }
+
+  .footer__two {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin-bottom: 1rem;
+      width: 12rem;
+    }
+
+    .btn-primary {
+      border: none;
+      .btn__link {
+        color: #fffffe;
+      }
+    }
+
+    .btn__twitter {
+      background-color: #2d96e0;
+
+      &:hover {
+        background-color: #2686ca;
+      }
+    }
+
+    .btn__gitHub {
+      background-color: #22272f;
+
+      &:hover {
+        background-color: #22272fe1;
+      }
+    }
+  }
+}
