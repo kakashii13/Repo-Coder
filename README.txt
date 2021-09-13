@@ -1,0 +1,1 @@
+SEO: Se agregaron Keywords, descripcion, y se personalizo el titulo en cada .html 
